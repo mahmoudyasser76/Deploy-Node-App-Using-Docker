@@ -298,17 +298,6 @@ button {
 
 ---
 
-# roles/deploy/files/backup.sh
-
-```bash
-#!/bin/bash
-DATE=$(date +%Y%m%d_%H%M%S)
-cp /home/ec2-user/notes.db /home/ec2-user/backup_notes_$DATE.db
-echo "Backup created: backup_notes_$DATE.db"
-```
-
----
-
 # flask-notes/app/requirements.txt
 
 ```
